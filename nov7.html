@@ -39,11 +39,46 @@
     li{
         color: red;
     }
-    */
+    
     li, a{
         color: red;
     }
-    
+    */
+
+    /*
+    a:nth-child(4){
+        color: red;
+    }
+    li:nth-child(even){
+        background-color: gray;
+    }
+    li:nth-child(odd){
+        background-color: rgb(231, 230, 230);
+    }
+    */
+    /*
+    a[target="_blank"]{
+        color: cadetblue;
+    }
+    li[value="200"]{
+        background-color: blueviolet;
+        color: white;
+    }
+    */
+
+    /*
+    a[target]{
+        color: cadetblue;
+    }
+    li[value]{
+        background-color: blueviolet;
+        color: white;
+    }
+    */
+
+    ul + a, ol + a{
+        color: brown;
+    }
 </style>
 <body>
     <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
@@ -63,17 +98,17 @@
         <li><a href="">Recusandae aut maiores voluptate vitae.</a></li>
         <li><a href="">Officiis fugit corrupti culpa accusantium.</a></li>
         <li><a href="">Cum tempora quidem laborum et?</a></li>
-        <a href="">Button 3</a> |
-        <a href="">Button 4</a>
+        <a target="_blank" href="https://royaltechnosoft.com">Button 3</a> |
+        <a target="_self" href="https://apple.com">Button 4</a>
     </ul>
-    <a href="">Button 5</a> |
-    <a href="">Button 6</a>
+    <a target="" href="">Button 5</a> |
+    <a href="https://samsung.com">Button 6</a>
     <ol>
-        <a href=""><li>Lorem ipsum dolor sit amet.</li></a>
-        <a href=""><li>Eos sunt dicta officia doloribus!</li></a>
-        <a href=""><li>Molestiae quae mollitia corporis aut.</li></a>
+        <a href=""><li value="100">Lorem ipsum dolor sit amet.</li></a>
+        <a href=""><li value="">Eos sunt dicta officia doloribus!</li></a>
+        <a href=""><li value="200">Molestiae quae mollitia corporis aut.</li></a>
         <a href=""><li>Labore velit incidunt nemo sit.</li></a>
-        <a href=""><li>Saepe dolorum maiores repellendus dicta.</li></a>
+        <a href=""><li value="300">Saepe dolorum maiores repellendus dicta.</li></a>
         <a href="">Button 7</a> |
         <a href="">Button 8</a>
     </ol>
