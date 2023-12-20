@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('/fonts.css');
+    .title{
+        font-family: "Prachi's fonts";
+        font-size: 32px;
+    }
+    #t0{
+        font-size: 48px;
+    }
+    #t1{
+        font-size: 2rem;
+        /* 1 rem = 16 px (By default) */
+        /* 
+        rem = root's em (font-size) 
+            = html's font size which is 16px by default
+        */
+    }
+    .content{
+        font-family: monospace;
+        /* font-size: 16px; */
+    }
+    #c1{
+        font-size: 1rem;
+    }
+
+    #upper{
+        font-size: 30px;
+        color: brown;
+    }
+    #c2{
+        /* font-size: 1em; */
+        font-size: 0.5em;
+    }
+    /* Exercise of em with #lower & confusion with em */
+</style>
+<body>
+    <h1 id="t0" class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, corporis iusto?</h1>
+    <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum ullam quidem ad perspiciatis aspernatur quam quod assumenda nisi sint voluptatibus quis, accusantium nulla. Soluta reiciendis impedit corporis, aliquid dolorem exercitationem molestiae enim officiis! Esse illum nesciunt tenetur ex dolore velit! Quisquam et deserunt beatae odio exercitationem tempore nostrum laudantium.</p>
+
+    <h3 class="title" id="t1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore.</h3>
+    <p class="content" id="c1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad inventore reprehenderit rerum eligendi rem ab ut ducimus delectus, nulla architecto modi magnam amet minus! Quia tempore a vel, reiciendis vitae ullam repellat id voluptas? Recusandae maxime ut officia minus, corrupti odio, quos est provident debitis inventore nihil reprehenderit. Assumenda, cum velit. Distinctio saepe quo veniam dolor sunt accusamus labore laboriosam sed aliquam dolore, dolores amet officiis? Suscipit eius sint minus? Illum iure nobis distinctio esse accusamus incidunt, officiis perspiciatis quod dolor cum ullam iste, qui ut temporibus officia possimus quos accusantium eveniet dolorem deserunt quam quasi. Magnam quisquam quas ab.</p>
+    <div id="upper">
+        <div>
+            <h3 class="title" id="t2">Fuga architecto soluta omnis pariatur nam velit quam numquam!</h3>
+            <a href="#">Link 1</a>
+        </div>
+        <div id="upper-inner">
+            <p class="content" id="c2">Iusto, dolor iure minima, illo harum incidunt perspiciatis id aliquam quod, ut vitae cum? Et saepe esse qui odio, alias ducimus quisquam sunt perspiciatis tempore repudiandae, quos laboriosam soluta recusandae reprehenderit, possimus hic cupiditate? Illo optio eveniet perspiciatis repellat earum ipsam consequuntur alias aliquid debitis nam, et ex placeat reiciendis omnis tenetur doloremque pariatur illum libero ipsum quis corporis! Quibusdam hic alias qui in, eligendi ullam, nisi, eius similique doloribus explicabo accusamus veniam est molestias laboriosam. Dolorum dolor, sequi itaque, tempore minus, delectus porro at sed vel hic numquam. Laudantium maiores, est fuga suscipit quam ullam eaque sapiente nemo ea.</p>
+        </div>
+    </div>
+    <div id="lower">
+        <div>
+            <h3 class="title" id="t3">Voluptatem nulla sequi nostrum vel, odio sapiente praesentium nesciunt?</h3>
+        </div>
+        <div id="lower-inner">
+            <div id="inner-most">
+                <p class="content" id="c3">Eveniet voluptate nesciunt ab. Quo, expedita ducimus! Facilis explicabo sit voluptate reprehenderit reiciendis a laborum maxime maiores harum eum dignissimos asperiores iure, soluta officiis sapiente laudantium repellendus. Porro aliquid explicabo nobis praesentium libero commodi tempore qui suscipit delectus, non ab cupiditate dolor assumenda quam tenetur sed rem, voluptatum ea consequuntur, dicta distinctio corrupti ipsum? Voluptates, ab sapiente perferendis sunt, suscipit minima quo, et nulla nisi dignissimos impedit. Illo voluptatibus quibusdam non ratione rem maxime. Et exercitationem dolorum ab officia tenetur at, commodi repellat voluptas quae iste. Iusto, nesciunt, quasi, voluptatibus perferendis consequuntur magnam aperiam quidem excepturi eveniet voluptatem quam error.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
