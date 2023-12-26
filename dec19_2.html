@@ -34,11 +34,27 @@
         font-size: 30px;
         color: brown;
     }
+    /*
+        em means multiple of parent's font size only if it is used in the property 'font-size'
+    */
+
     #c2{
         /* font-size: 1em; */
         font-size: 0.5em;
     }
     /* Exercise of em with #lower & confusion with em */
+    #lower{
+        font-size: 1.5rem;
+    }
+    #lower-inner{
+        font-size: 1.5em;
+    }
+    #inner-most{
+        font-size: 0.7em;
+    }
+    #c3{
+        font-size: 1.2em;
+    }
 </style>
 <body>
     <h1 id="t0" class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, corporis iusto?</h1>
@@ -46,6 +62,7 @@
 
     <h3 class="title" id="t1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore.</h3>
     <p class="content" id="c1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad inventore reprehenderit rerum eligendi rem ab ut ducimus delectus, nulla architecto modi magnam amet minus! Quia tempore a vel, reiciendis vitae ullam repellat id voluptas? Recusandae maxime ut officia minus, corrupti odio, quos est provident debitis inventore nihil reprehenderit. Assumenda, cum velit. Distinctio saepe quo veniam dolor sunt accusamus labore laboriosam sed aliquam dolore, dolores amet officiis? Suscipit eius sint minus? Illum iure nobis distinctio esse accusamus incidunt, officiis perspiciatis quod dolor cum ullam iste, qui ut temporibus officia possimus quos accusantium eveniet dolorem deserunt quam quasi. Magnam quisquam quas ab.</p>
+    <h3>Upper:</h3>
     <div id="upper">
         <div>
             <h3 class="title" id="t2">Fuga architecto soluta omnis pariatur nam velit quam numquam!</h3>
@@ -55,6 +72,7 @@
             <p class="content" id="c2">Iusto, dolor iure minima, illo harum incidunt perspiciatis id aliquam quod, ut vitae cum? Et saepe esse qui odio, alias ducimus quisquam sunt perspiciatis tempore repudiandae, quos laboriosam soluta recusandae reprehenderit, possimus hic cupiditate? Illo optio eveniet perspiciatis repellat earum ipsam consequuntur alias aliquid debitis nam, et ex placeat reiciendis omnis tenetur doloremque pariatur illum libero ipsum quis corporis! Quibusdam hic alias qui in, eligendi ullam, nisi, eius similique doloribus explicabo accusamus veniam est molestias laboriosam. Dolorum dolor, sequi itaque, tempore minus, delectus porro at sed vel hic numquam. Laudantium maiores, est fuga suscipit quam ullam eaque sapiente nemo ea.</p>
         </div>
     </div>
+    <h3>Lower:</h3>
     <div id="lower">
         <div>
             <h3 class="title" id="t3">Voluptatem nulla sequi nostrum vel, odio sapiente praesentium nesciunt?</h3>

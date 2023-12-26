@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer{
+        font-size: 20px;
+    }
+    .inner{
+        font-size: 22px;
+        background-color: papayawhip;
+        height: 10em;   /* 10*22 = 220px */
+        line-height: 1.5em;
+    }
+    .text{
+        font-size: 0.8em;   /* 0.8*22 = 17.6px */
+        line-height: 1.5em;     /* 1.5*17.6 = 26.4px */
+    }
+    a{
+        text-decoration: none;
+        background-color: indianred;
+        /* No inline tags (except <img> & <button> takes height or width) */
+        width: 200px;
+        height: 150px;
+    }
+</style>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eligendi mollitia sint veritatis voluptas perspiciatis dolorum repudiandae recusandae, quos quo inventore officia adipisci obcaecati temporibus vero maxime voluptatem? Placeat, sint.</p>
+        </div>
+    </div>
+    <a href="#">Click Me!</a>
+</body>
+</html>
