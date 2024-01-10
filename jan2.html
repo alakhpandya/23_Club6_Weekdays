@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    Color1: #BC3019
+    Color2: #F0761F
+    */
+    body{
+        height: 96vh;
+        background-image: linear-gradient(to top, #BC3019, #F0761F);
+        background-repeat: no-repeat;
+        /*
+        background-image: linear-gradient(to bottom, #BC3019, #F0761F);
+        background-image: linear-gradient(to left, #BC3019, #F0761F);
+        background-image: linear-gradient(to right, #BC3019, #F0761F);
+        background-image: linear-gradient(to top right, #BC3019, #F0761F);
+        background-image: linear-gradient(to top left, #BC3019, #F0761F);
+        background-image: linear-gradient(to bottom left, #BC3019, #F0761F);
+        background-image: linear-gradient(to bottom right, #BC3019, #F0761F);
+        background-image: linear-gradient(90deg, #BC3019, #F0761F);
+        
+        background-image: linear-gradient(to right, #57f338, #f5fc23, #F0761F);
+        background-image: radial-gradient(#57f338, #f5fc23, #F0761F);
+        background-image: radial-gradient(circle, #57f338, #f5fc23, #F0761F);
+        */
+    }
+
+    .child, .parent{
+        border: solid;
+    }
+    .parent{
+        height: 400px;
+        /* position: relative; */
+    }
+    .child{
+        height: 200px;
+        width: 400px;
+        margin: auto;
+        /* position: relative; */
+    }
+    #static{
+        position: static;
+        /* 
+        default position assigned to all elements
+        we can not use top, bottom, left or right
+        */
+    }
+    #relative{
+        position:relative;
+        /* 
+        When we give any position other than 'static' to an element, two things happen:
+        1. The element is 'picked out of the canvas' so, we can move it wherever we want and it will float over the other elements.
+        2. Now we can use 4 special properties: top, bottom, left & right
+        */
+        /* bottom: 10px; */
+        /* top: 20px; */
+        /* left: 20px; */
+        /* right: 20px; */
+        /* 
+        bottom: 100px;
+        left: 50px;
+        right: 50px;
+        top: 10px;
+        */
+        bottom: 100px;
+        /* 
+        Element keeps its original placed reserved.
+        new position is calculated with respect to the original position of the element.
+        */
+    }
+
+    #absolute{
+        position: absolute;
+        /* top: 10px;
+        left: 50px; */
+        /* bottom: 30px;
+        right: 20px; */
+        /* 
+        Element doesn't keep its original place reserved.
+        New position is computed with respect to the top/bottom/left/right of the parent whose position is relative.
+        */
+        /* 
+        top: 30px;
+        left: 20px;
+        right: 40px;
+        bottom: 50px;
+        */
+        /* top: -12px;
+        right: -30px; */
+        bottom: 20px;
+        left: 10px;
+    }
+
+    #fixed{
+        position: fixed;
+        border: solid yellow;
+        width: 100px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 10px;
+        text-align: center;
+        bottom: 20px;
+        right: 10px;
+        /* Changes the width of the element */
+        /* used to create 'chatbots' */
+    }
+    #sticky{
+        border: solid;
+        background-color: black;
+        color: white;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        /* Used to create 'sticky' navigation bars */
+    }
+</style>
+<body>
+    <br>
+    <div class="parent">
+        <div id="sticky">Sticky</div>
+
+
+        <br><br><br><br><br>
+        <div class="child">
+            <br><br><br><br>
+            <button id="static">Static</button>
+            <button id="relative">Relative</button>
+            <button id="absolute">Absolute</button>
+            <div id="fixed">Fixed</div>
+        </div>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perferendis rerum quos magni quidem at architecto ipsum! Totam quasi eligendi, magnam architecto veniam rerum voluptates omnis cumque dolore magni cupiditate debitis impedit voluptatibus assumenda non suscipit sunt explicabo illum hic sequi velit voluptatum. Ratione, expedita voluptatibus! Quia, eum inventore mollitia autem ducimus alias tempore atque rem quasi at, amet soluta labore aperiam porro nisi impedit sunt nostrum, id earum commodi dolor quam eligendi! Soluta illum labore, voluptatem molestias nam ad saepe quos alias numquam nisi, vitae maiores itaque distinctio, voluptas perspiciatis quod nihil eum accusamus. Quidem voluptate ipsum saepe voluptatem eligendi soluta consequuntur error totam, aperiam dolore blanditiis consectetur dicta similique obcaecati ipsa reprehenderit nisi aliquid nihil? Consequuntur aspernatur cumque, omnis, obcaecati consequatur iusto labore saepe repellendus inventore voluptatem rerum eveniet ipsa quia consectetur quaerat repellat fuga. Doloremque officia quod ad hic quis, amet voluptas, inventore, veniam libero magnam accusamus officiis minus repudiandae. Dolorem beatae iure itaque, qui ad numquam placeat inventore aliquam illum consequatur eum, accusantium libero dolorum nostrum! Magni reprehenderit hic ab nostrum incidunt iusto, accusantium quaerat delectus dicta odit culpa molestiae commodi! Quo, voluptate mollitia inventore molestiae amet libero ipsum perferendis pariatur molestias aliquam itaque quas quod modi maiores quos consectetur laborum laboriosam! Et deserunt alias harum, reprehenderit culpa optio vero ipsam minus sed omnis eos nostrum vel tempora dolore nemo quibusdam veritatis aperiam qui voluptate repudiandae asperiores nisi maxime. Officiis pariatur reprehenderit hic neque ipsa est quam! Delectus itaque, fugiat quia iure explicabo dicta totam tempora sed, tenetur repellendus error excepturi doloremque ipsam reiciendis ea? Molestias in voluptatem temporibus consequatur beatae doloremque. Amet, ipsa, non totam nisi voluptates culpa expedita tempora officia autem saepe, sit ab iusto sint voluptatum assumenda distinctio consequuntur repellendus ducimus atque doloribus magnam odit. Facilis non unde quis eos autem necessitatibus animi.</p>
+</body>
+</html>
