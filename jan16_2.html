@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    h1{
+        text-align:center;
+    }
+    
+    #i{
+        background-color: orangered;
+    }
+    #india{
+        background-color: green;
+    }
+    */
+
+    /* Before & After Pseudo Elements */
+    h1{
+        text-align: center;
+        /* color: skyblue;
+        font-size: 1rem; */
+    }
+    h1::before{
+        content: "I";
+        /*         
+        content: "";
+        height: 100px;
+        width: 200px;
+         */
+        background-color: orangered;
+        display: block;
+    }
+    h1::after{
+        content: "India";
+        /*         
+        content: "";
+        height: 100px;
+        width: 200px;
+         */
+        background-color: green;
+        display: block;
+    }
+</style>
+<body>
+<!--     
+    <h1 id="i">I</h1>
+    <h1 id="love">Love</h1>
+    <h1 id="india">India</h1> 
+-->
+
+    <!-- <h1><span id="i">I</span> Love <span id="india">India</span></h1> -->
+
+    <h1>Love</h1>
+    <!-- 
+        'I' is INSIDE OF <h1> tag.
+        'India' is INSIDE OF <h1> tag.
+        They go before or after the content of h1 ('Love')
+
+        That's why they cannot be used with self-closing tags.
+
+        We must write 'content' in the before or after. Without 'content' they don't work! Well, content might be null but we have to have content.
+     -->
+</body>
+</html>
