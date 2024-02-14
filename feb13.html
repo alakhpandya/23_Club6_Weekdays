@@ -25,6 +25,10 @@
 
         /* background-color: greenyellow; */
     }
+    #box2{
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     #box3{
         margin-top: 1rem;
@@ -38,6 +42,10 @@
     #box5{
         margin-left: 20px;
         margin-right: 30px;
+
+        /* margin auto does not work vertically */
+        margin-top: auto;
+        margin-bottom: auto;
     }
     #box7{
         /* equal margin all the sides */
@@ -58,6 +66,10 @@
         margin: 10px 20px 30px 40px;
         /* clockwise padding: top right bottom left; */
         padding: 10px 20px 30px 40px;
+    }
+    #box12{
+        /* margin-left: auto; */
+        margin: 2rem auto;
     }
     #box13{
         /* margin: top left-right bottom; */
@@ -81,7 +93,11 @@
         /* margins overlap only between block elements! */
         margin-left: 50px;
     }
-    
+    #btn3{
+        /* margin auto only works with block element */
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 <body>
     <h1>Margin & Padding</h1>
@@ -103,5 +119,8 @@
 
     <button id="btn1">Button 1</button>
     <button id="btn2">Button 2</button>
+
+    <br>
+    <button id="btn3">Button 3</button>
 </body>
 </html>
