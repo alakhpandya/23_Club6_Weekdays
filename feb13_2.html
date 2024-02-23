@@ -16,6 +16,26 @@
     }
     .boxes{
         width: 300px;
+        /* box-sizing: content-box;    default */
+        box-sizing: border-box;
+    }
+    /* #box1{
+        width: 370px;
+    } */
+    #box2{
+        /* padding: 0 20px; */
+        padding: 20px;
+        /* width: 330px; */
+    }
+    #box3{
+        padding: 25px;
+        border: 10px solid black;
+    }
+    /* Complete CSS reset */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 </style>
 <body>
