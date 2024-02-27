@@ -12,30 +12,89 @@
         box-sizing: border-box;
     }
     .container{
+        /* padding: 0 20px; */
         /* display: flex;
         justify-content: center; */
         border: solid red;
-        width: fit-content;
-        margin: auto;
-        height: 80vh;
+        height: 100vh;
+        
+        /* width: fit-content; */
+        /* margin: auto; */
+        /* position: relative; */
+
+        display: flex;
+        /* To get children horizontally alligned: justify-content */
+        justify-content: center;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: space-between;
+        /* justify-content: space-evenly;
+        justify-content: space-around; */
+
+        /* gap: 50px; */
+        gap: 2rem;
+
+        /* To get children vetrtically alligned: align-items */
+        /* align-items: center;
+        align-items: flex-start;
+        align-items: flex-end;
+
+        flex-direction: column; */
+        /* When we change flex-direction to 'column' then justify-content will get items alligned vertically while the align-items will start alligning them horizonatlly. In short, they will chang their roles. */
+    }
+    .subcontainer{
+        border: solid blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .boxes{
         border: navy solid;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         background-color: aliceblue;
 
-        display: inline-block;
+        /* display: inline-block; */
+    }
+
+    #box1{
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    #box2{
+        /* flex-shrink: 1;     default */
+        flex-shrink: 2;
+    }
+    #box3{
+        /* align-self: center; */
+        /* align-self: flex-end; */
+        /* align-self: flex-start; */
+
+        flex-shrink: 3;
+        flex-grow: 3
+    }
+    #box5{
+        flex-grow: 1;
+    }
+    #box6{
+        flex-grow: 2;
     }
 </style>
 <body>
     <div class="container">
-        <div class="boxes" id="box1">Box 1</div>
-        <div class="boxes" id="box2">Box 2</div>
-        <div class="boxes" id="box3">Box 3</div>
-        <div class="boxes" id="box4">Box 4</div>
-        <div class="boxes" id="box5">Box 5</div>
-        <div class="boxes" id="box6">Box 6</div>
+        <!-- <div class="subcontainer"> -->
+            <div class="boxes" id="box1">Box 1</div>
+            <div class="boxes" id="box2">Box 2</div>
+            <div class="boxes" id="box3">Box 3</div>
+            <!-- <div class="boxes" id="box4">Box 4</div> -->
+            <div class="boxes" id="box5">Box 5</div>
+            <div class="boxes" id="box6">Box 6</div>
+        <!-- </div> -->
     </div>
 </body>
 </html>
+
+<!-- 
+    Next Class: flex-wrap and further...
+ -->
