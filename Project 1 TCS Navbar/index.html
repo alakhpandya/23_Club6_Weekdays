@@ -24,6 +24,12 @@
         display: flex;
         justify-content: space-between;
     }
+    .nav-collapse{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        border: solid white;
+    }
     nav div, nav ul{
         /* border: solid yellow; */
     }
@@ -54,23 +60,50 @@
         font-size: 1.5rem;
         cursor: pointer;
     }
+
+    .bar-icon{
+        color: white;
+        display: none;
+    }
+
+
+    @media (max-width: 1120px){
+        nav{
+            display: block;
+        }
+        .bar-icon{
+            display: block;
+        }
+        .nav-collapse{
+            margin-top: ;
+        }
+        .nav-sm{
+            display: flex;
+            align-items: center;
+        }
+    }
 </style>
 <body>
     <nav>
-        <div class="logo">
-            <img src="/img/tcs-logo-1.svg" alt="">
+        <div class="nav-sm">
+            <div class="logo">
+                <img src="/img/tcs-logo-1.svg" alt="">
+            </div>
+            <i class="fa-solid fa-bars bar-icon"></i>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">What we do</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Who we are</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Newsroom</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Investors</a></li>
-        </ul>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <img src="/img/tata-logo-1.svg" alt="">
+        <div class="nav-collapse">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">What we do</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Who we are</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Newsroom</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Investors</a></li>
+            </ul>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <img src="/img/tata-logo-1.svg" alt="">
+            </div>
         </div>
     </nav>
 </body>
