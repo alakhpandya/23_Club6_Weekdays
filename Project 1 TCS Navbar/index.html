@@ -15,28 +15,39 @@
         padding: 0;
         box-sizing: border-box;
     }
+    ul{
+        list-style: none;
+    }
     body{
-        background-color: black;
+        background-color: grey;
         font-family: sans-serif;
     }
     nav{
-        /* border: solid red; */
         display: flex;
         justify-content: space-between;
+        height: 4.2rem;
+        background-color: black;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .nav-show{
+        height: 31rem;
     }
     .nav-collapse{
         display: flex;
         width: 80%;
         justify-content: space-between;
-        border: solid white;
-    }
-    nav div, nav ul{
-        /* border: solid yellow; */
     }
     .nav-menu{
         display: flex;
         align-items: center;
         gap: 3rem;
+    }
+    .nav-sm{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
     }
     .nav-link{
         color: white;
@@ -64,6 +75,51 @@
     .bar-icon{
         color: white;
         display: none;
+        font-size: 1.75rem;
+    }
+
+    /* ------------------------------ Main Section ------------------------------ */
+    main{
+        background-color: cornflowerblue;
+        padding: 0 10vw;
+    }
+    .banner{
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .img-box, .text-box{
+        /* border: solid red; */
+    }
+    .img-box{
+        text-align: right;
+    }
+    .text-box{
+        position: relative;
+        text-align: center;
+        padding: 8rem 0 5rem;
+    }
+    .quote-mark{
+        font-family: Engravers MT;
+        font-size: 15rem;
+        position: absolute;
+        opacity: 0.4;
+    }
+    .opening-quote{
+        left: 0;
+        top: 0;
+        transform: translate(-15%, -10%);
+    }
+    .closing-quote{
+        bottom: 20px;
+        right: 0;
+        transform: translateY(50%);
+    }
+    .quote{
+        /* border: solid black; */
+        font-family: cursive;
+        font-size: 2rem;
+        font-weight: 600;
     }
 
 
@@ -74,12 +130,30 @@
         .bar-icon{
             display: block;
         }
-        .nav-collapse{
-            margin-top: ;
+        .nav-menu{
+            align-items: flex-end;
+            gap: 1rem;
+            flex-direction: column;
+            padding-bottom: 2rem;
         }
         .nav-sm{
             display: flex;
             align-items: center;
+        }
+        .nav-collapse{
+            flex-direction: column;
+            margin-left: auto;
+            padding-right: 20px;
+        }
+        .search{
+            justify-content: flex-end;
+            gap: 3rem;
+        }
+
+        .banner{
+            gap: 3rem;
+            justify-content: center;
+            flex-direction: column;
         }
     }
 </style>
@@ -89,7 +163,7 @@
             <div class="logo">
                 <img src="/img/tcs-logo-1.svg" alt="">
             </div>
-            <i class="fa-solid fa-bars bar-icon"></i>
+            <i class="fa-solid fa-bars bar-icon" onclick="document.querySelector('nav').classList.toggle('nav-show')"></i>
         </div>
         <div class="nav-collapse">
             <ul class="nav-menu">
@@ -106,5 +180,18 @@
             </div>
         </div>
     </nav>
+
+    <main>
+        <div class="banner">
+            <div class="text-box">
+                <span class="quote-mark opening-quote">“</span>
+                <span class="quote">If you want to walk fast, walk alone. But if you want to walk far, walk together.</span>
+                <span class="quote-mark closing-quote">”</span>
+            </div>
+            <div class="img-box">
+                <img src="/img/Ratan_tata-removebg-preview.png" alt="" class="boss-img">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
