@@ -1,0 +1,51 @@
+@import url("/css/fonts.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------- Variables ---------------------------------------- */
+:root{
+    --primary-font: "Exo Normal", sans-serif;
+    --primary-italic-font: "Exo Italic", sans-serif;
+    --title-font: "Josefin Normal", cursive;
+
+    --black: #494947;
+    --dark-col-1: #1877F2;
+    --medium-col: #C44900;
+    --light-col-1: #8A9B68;
+    --white: #FFFFFF;
+}
+
+/* ---------------------------------------- Global Classes & Tags ---------------------------------------- */
+
+body{
+    background-color: var(--black);
+}
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------------------- Navbar ---------------------------------------- */
+.navbar{
+    background-color: var(--medium-col);
+    color: var(--white);
+    padding: 0 20px;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    color: var(--white);
+    font-family: var(--primary-italic-font);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.bar-icon{
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --col1 : #114232;
+        --col2 : #FCDC2A;
+        --col3 : #87A922;
+
+        --title-fonts: cursive, arial;
+        --regular-fonts: sans-serif, serif;
+    }
+    #cont-1, #cont-2{
+        /* background-color: antiquewhite; */
+        /* --col1 : black; */
+        /* --col2 : #adff2f; */
+        /* --col3 : rgb(245, 245, 245); */
+
+
+        background-color: var(--col1);
+        padding: 1rem 3rem;
+    }
+    h1{
+        margin: 2rem 0;
+        font-family: var(--title-fonts);
+    }
+    p{
+        margin-bottom: 1rem;
+        font-family: var(--regular-fonts);
+    }
+    #title-1, #title-2, #title-3{
+        /* color: navy; */
+        /* color: greenyellow; */
+        color: var(--col2);
+    }
+    #text-1, #text-2, #text-3{
+        /* color: brown; */
+        /* color: whitesmoke; */
+        color: var(--col3);
+        font-size: 1.1rem;
+    }
+    .upper-btn, .lower-btn, .lower-most-btn{
+        /* background-color: black; */
+        /* background-color: greenyellow; */
+        background-color: var(--col2);
+        /* color: greenyellow; */
+        color: var(--col1);
+        border: none;
+        padding: 0.2rem 0.6rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /*
+    #title-2{
+        color: navy;
+        color: var(--col2);
+    }
+    #text-2{
+        color: brown;
+        color: var(--col3);
+        font-size: 1.1rem;
+    }
+    .lower-btn{
+        background-color: var(--col2);
+        color: var(--col1);
+        border: none;
+        padding: 0.2rem 0.6rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #cont-2{
+        background-color: var(--col1);
+        padding: 1rem 3rem;
+    }
+    #title-3{
+        color: var(--col2);
+    }
+    #text-3{
+        color: var(--col3);
+    }
+    .lower-most-btn{
+        background-color: var(--col2);
+        color: var(--col1);
+        border: none;
+        padding: 0.2rem 0.6rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    */
+</style>
+<body>
+    <div id="cont-1">
+        <h1 id="title-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</h1>
+        <p id="text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus laborum atque, consequatur nobis eligendi, veniam facilis repudiandae repellendus dolorem, aspernatur assumenda est! Obcaecati iste accusamus labore eius natus molestias doloremque.</p>
+        <button class="upper-btn">Click</button>
+        <button class="upper-btn">Click</button>
+    
+        <h1 id="title-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</h1>
+        <p id="text-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus laborum atque, consequatur nobis eligendi, veniam facilis repudiandae repellendus dolorem, aspernatur assumenda est! Obcaecati iste accusamus labore eius natus molestias doloremque.</p>
+        <button class="lower-btn">Click</button>
+        <button class="lower-btn">Click</button>
+    </div>
+
+    <div id="cont-2">
+        <h1 id="title-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</h1>
+        <p id="text-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus laborum atque, consequatur nobis eligendi, veniam facilis repudiandae repellendus dolorem, aspernatur assumenda est! Obcaecati iste accusamus labore eius natus molestias doloremque.</p>
+        <button class="lower-most-btn">Click</button>
+        <button class="lower-most-btn">Click</button>
+    </div>
+</body>
+</html>
