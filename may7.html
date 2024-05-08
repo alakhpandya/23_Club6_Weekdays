@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #box1 {
+      border: solid blue;
+      width: 200px;
+      margin: 3rem auto;
+      height: 250px;
+      padding: 1rem;
+      /* overflow: hidden; */
+      /* overflow-y: scroll; */
+      overflow-y: auto;
+    }
+    #box2 {
+      border: solid red;
+      width: 200px;
+      margin: 3rem auto;
+      height: 250px;
+      /* overflow: auto; */
+      overflow: hidden;
+    }
+    img {
+      height: 100%;
+      transform: translateX(-200px);
+    }
+  </style>
+  <body>
+    <div id="box1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, recusandae!
+      Esse error assumenda repellat eos non! Nisi deleniti reprehenderit optio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, provident
+      modi? Explicabo corporis corrupti saepe dolore quaerat, modi reiciendis
+      quibusdam praesentium in dolorum, aut porro. Dolorum asperiores dicta
+      consectetur minus.
+    </div>
+
+    <div id="box2">
+      <img src="/images/merc_interior.jpeg" alt="" />
+    </div>
+  </body>
+</html>

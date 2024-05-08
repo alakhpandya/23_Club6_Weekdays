@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: aliceblue;
+    }
+    .container {
+      display: grid;
+      /* grid-template-columns: 300px 300px 300px 300px; */
+      grid-template-columns: 600px 300px 300px 300px;
+      gap: 1rem;
+    }
+    .boxes {
+      height: 350px;
+      background-color: white;
+      border: solid;
+      border-radius: 1rem;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="boxes" id="card1"></div>
+      <div class="boxes" id="card2"></div>
+      <div class="boxes" id="card3"></div>
+      <div class="boxes" id="card4"></div>
+      <div class="boxes" id="card5"></div>
+    </div>
+  </body>
+</html>
