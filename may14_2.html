@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .progress {
+      background-color: green;
+      height: 50px;
+      width: 20px;
+      margin: 1rem;
+      /* animation-name: expand-bar2; */
+      animation-duration: 4s;
+      /* animation-iteration-count: 3; */
+      animation-iteration-count: infinite;
+      /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+      /* animation-timing-function: ease-in; */
+      /* animation-timing-function: steps(10); */
+    }
+
+    @keyframes expand-bar {
+      from {
+        width: 20px;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes expand-bar2 {
+      0% {
+        width: 20px;
+      }
+      50% {
+        width: 100%;
+      }
+      100% {
+        width: 20px;
+      }
+    }
+
+    .sphere {
+      background-color: red;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      position: absolute;
+      left: 20px;
+      top: 100px;
+      /* animation-name: moveSphere; */
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes moveSphere {
+      0% {
+        left: 20px;
+        top: 100px;
+      }
+      25% {
+        left: 20px;
+        top: 350px;
+        border-radius: 25%;
+        background-color: blueviolet;
+        border: solid black;
+      }
+      50% {
+        left: 400px;
+        top: 350px;
+        border-radius: 0;
+        background-color: olivedrab;
+        border: solid orangered;
+      }
+      75% {
+        left: 400px;
+        top: 100px;
+        border-radius: 25%;
+        background-color: blue;
+        border: solid lightcyan;
+      }
+    }
+
+    .pendulum-thread {
+      width: 6px;
+      background-color: black;
+      height: 200px;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .pendulum {
+      height: 60px;
+      width: 60px;
+      background-color: darkgray;
+      border-radius: 50%;
+      border: solid;
+      position: absolute;
+      top: 350px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      animation: clock-pendulum 3s;
+    }
+
+    @keyframes clock-pendulum {
+      0% {
+        top: 350px;
+        left: 50%;
+      }
+      25% {
+        top: 310px;
+        left: 20%;
+      }
+      50% {
+        top: 350px;
+        left: 50%;
+      }
+      75% {
+        top: 310px;
+        left: 80%;
+      }
+    }
+  </style>
+  <body>
+    <div class="progress"></div>
+
+    <div class="sphere"></div>
+
+    <div class="pendulum-thread"></div>
+    <div class="pendulum"></div>
+  </body>
+</html>
+<!-- Next class: more animations in the same file -->

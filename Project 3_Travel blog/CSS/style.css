@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(200, 208, 215);
+}
+
+.item {
+  height: 150px;
+  width: 150px;
+  background-color: cyan;
+}

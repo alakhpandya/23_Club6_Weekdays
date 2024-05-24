@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Demo</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: aliceblue;
+      padding: 1rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .grid-parent {
+      display: grid;
+      gap: 1rem;
+    }
+    .card {
+      border-radius: 7px;
+      padding: 1rem;
+    }
+
+    #card1 {
+      background-color: blueviolet;
+    }
+    #card2 {
+      background-color: darkslategray;
+    }
+    #card3,
+    #card4 {
+      background-color: white;
+    }
+    #card5 {
+      background-color: #333;
+    }
+    #card1,
+    #card2,
+    #card5 {
+      color: white;
+    }
+
+    .user {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .profile-pic {
+      border: solid 1px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .headline {
+      margin: 2rem 0 1rem;
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      line-height: 1.3em;
+    }
+    .message {
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid-parent {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #card1,
+      #card5 {
+        grid-column: span 2;
+      }
+      #card3 {
+        grid-row: span 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid-parent {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+  <body>
+    <div class="grid-parent">
+      <div class="card" id="card1">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="info">
+            <h3 class="name">Lorem, ipsum.</h3>
+            <p class="role">Lorem, ipsum.</p>
+          </div>
+        </div>
+        <h3 class="headline">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore
+          nam veniam quo perferendis! Quasi repudiandae quod nam sequi porro
+          cumque pariatur cum?
+        </h3>
+        <p class="message">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vero
+          recusandae nam esse voluptas expedita tenetur itaque reiciendis.
+          Tempora error nesciunt labore, mollitia quod aliquid quaerat
+          distinctio necessitatibus repellat veniam qui expedita tempore
+          eligendi delectus voluptate, Itaque, amet rem.
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="info">
+            <h3 class="name">Et, eligendi?</h3>
+            <p class="role">Consectetur, temporibus.</p>
+          </div>
+        </div>
+        <h3 class="headline">
+          Delectus quam iure consequatur totam, accusantium culpa?
+        </h3>
+        <p class="message">
+          Mollitia laborum fugiat ducimus voluptate, quia reprehenderit sint
+          ullam voluptatum non ex commodi minus dolorum hic. Dolore magnam
+          molestias!
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="info">
+            <h3 class="name">Nulla, impedit!</h3>
+            <p class="role">Aut, recusandae.</p>
+          </div>
+        </div>
+        <h3 class="headline">
+          Eveniet illum accusamus inventore placeat dolore blanditiis amet fuga.
+        </h3>
+        <p class="message">
+          Voluptatibus id doloremque commodi. Esse dolores suscipit aliquam
+          quibusdam dolor ipsam animi quisquam rem aliquid cum harum tempora
+          aperiam numquam, exercitationem voluptates iusto quasi placeat
+          voluptatem vitae asperiores reprehenderit. Ullam non ducimus, voluptas
+          aut quod eligendi sed, inventore ab numquam, amet veniam? Laborum non
+          quae illum harum, facilis sed ut mollitia maiores. Aut repellat
+          delectus eos porro. Quos, numquam. Placeat eligendi atque, omnis ipsa,
+          sint earum accusantium, quisquam quaerat dignissimos consequuntur quod
+          voluptatem sapiente!
+        </p>
+      </div>
+      <div class="card" id="card4">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="info">
+            <h3 class="name">Dolor, provident.</h3>
+            <p class="role">Molestias, sed!</p>
+          </div>
+        </div>
+        <h3 class="headline">
+          Labore quo magnam perspiciatis quos suscipit reiciendis explicabo.
+        </h3>
+        <p class="message">
+          Veritatis, quas similique? Consequatur ratione officiis quaerat ullam
+          quas saepe quos, sint quod pariatur totam?
+        </p>
+      </div>
+      <div class="card" id="card5">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="info">
+            <h3 class="name">Sunt, libero.</h3>
+            <p class="role">Explicabo, consectetur.</p>
+          </div>
+        </div>
+        <h3 class="headline">
+          Adipisci minima rerum voluptate incidunt vel cupiditate reprehenderit
+          repudiandae, aperiam accusamus laboriosam consectetur.
+        </h3>
+        <p class="message">
+          Sapiente quisquam porro odio nam cum excepturi dolores laborum
+          suscipit molestiae. Esse, consectetur. Dolores error nisi omnis,
+          nostrum aperiam nobis adipisci ipsa at. Voluptatem neque consequuntur
+          ullam quidem maiores recusandae dolorem!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
