@@ -4,12 +4,42 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(200, 208, 215);
+.carousel-container {
+  position: relative;
+  border: solid blue;
 }
-
 .item {
   height: 150px;
   width: 150px;
   background-color: cyan;
+  margin: auto;
+}
+.owl-nav {
+  /* border: solid red; */
+  margin-top: 0 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: grid;
+}
+.left {
+  background-color: skyblue;
+  height: 200vh;
+}
+.right {
+  background-color: navy;
+  height: 200vh;
+}
+
+@media (min-width: 1000px) {
+  main {
+    grid-template-columns: 70% 30%;
+  }
 }
