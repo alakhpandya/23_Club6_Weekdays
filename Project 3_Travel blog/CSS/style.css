@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 .carousel-container {
   position: relative;
   border: solid blue;
 }
-.item {
+.carousel-item {
   height: 150px;
   width: 150px;
   background-color: cyan;
@@ -28,14 +30,98 @@
 
 main {
   display: grid;
+  margin-top: 70vh;
 }
 .left {
-  background-color: skyblue;
-  height: 200vh;
+  /* background-color: skyblue; */
+  /* height: 200vh; */
 }
+.left article {
+  width: 95%;
+  margin: 3rem auto;
+  border: solid white;
+}
+article .img-container {
+  width: 100%;
+  overflow: hidden;
+}
+.blog-img {
+  width: 100%;
+  transition: 0.3s;
+}
+.blog-img:hover {
+  scale: 1.2;
+}
+.blog-title {
+  margin: 1rem 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #444;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+.blog-description {
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+.blog-link {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+.blog-seperator {
+  margin-top: 2rem;
+}
+
 .right {
-  background-color: navy;
-  height: 200vh;
+  /* background-color: navy;
+  height: 200vh; */
+}
+.sidebar-item-title {
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.sidebar-subitem {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  width: 75%;
+  margin: 1rem auto;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Courier New", Courier, monospace;
+}
+.sidebar-link {
+  color: black;
+}
+.popular-post {
+  border: red solid;
+  width: 85%;
+  margin: 2rem auto;
+}
+.popular-post-img-container {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.popular-post-img {
+  width: 100%;
+}
+.popular-post-sticker {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  background-color: white;
+  padding: 0.2rem;
+}
+.popular-post-title {
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #444;
 }
 
 @media (min-width: 1000px) {
